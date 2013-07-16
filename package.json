@@ -1,0 +1,12 @@
+{
+  "name": "template-example",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "grunt-contrib-connect": "~0.3.0",
+    "grunt-contrib-livereload": "~0.1.2",
+    "grunt-regarde": "~0.1.1",
+    "grunt": "~0.4.1",
+    "grunt-contrib-handlebars": "~0.5.10"
+  }
+}

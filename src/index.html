@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf8">
+<title>템플릿 엔진 예제</title>
+</head>
+<body>
+<h1>Hello!</h1>
+
+<div id="result"></div>
+<div id="friends"></div>
+
+<!-- 컴파일한 템플릿을 실행하기 위한 런타임 -->
+<script src="lib/handlebars.runtime.js"></script>
+<!-- template.js 파일을 빌드 시점에서 미리 컴파일함. -->
+<script src="tmpl/tmpl.compiled.js"></script>
+<script>
+
+var result = Tmpl.ppopo({
+    who: '택배',
+    when: '도착'
+});
+
+document.getElementById('result').innerHTML = result;
+
+
+var friendsHtml = Tmpl.friends({
+    friends: [
+        {name: 'Steve', phone: '1111'},
+        {name: 'David', phone: '2222'},
+        {name: 'Dale', phone: '3333'}
+    ]
+});
+
+document.getElementById('friends').innerHTML = friendsHtml;
+
+
+</script>
+</body>
+</html>
